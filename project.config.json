@@ -1,0 +1,65 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.1.1",
+	"appid": "wx71c2161210ff18d7",
+	"projectname": "01.coolfish",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "课程详情",
+					"pathName": "pages/course/courseDetail/courseDetail",
+					"query": "course=前端课程班"
+				},
+				{
+					"id": -1,
+					"name": "个人中心",
+					"pathName": "pages/profiles/profiles",
+					"query": "gender=boy"
+				},
+				{
+					"id": 2,
+					"name": "购买会员",
+					"pathName": "pages/course/buyCourse/buyCourse",
+					"query": ""
+				},
+				{
+					"id": 3,
+					"name": "手机绑定",
+					"pathName": "pages/profiles/bindMobile/bindMobile",
+					"query": ""
+				}
+			]
+		}
+	}
+}

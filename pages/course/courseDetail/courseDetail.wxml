@@ -1,0 +1,66 @@
+<!-- 课程详细页面结构 -->
+<view class="main">
+  <view class="video-container">
+    <!-- 视频 -->
+    <video id="myVideo" bindtimeupdate="controlPlay" src="{{videoInfo[radomIndex].url}}" autoplay='{{videoInfo[radomIndex].autoplay}}' controls="{{controls}}" page-gesture=""></video>
+    <view class="video-info">
+      <view class="left">
+        <view class="title">{{videoInfo[radomIndex].title}}</view>
+        <view class="someInfo">
+          <text class="teacher">主讲:{{videoInfo[radomIndex].teacher}}</text>
+          <text class="courseTime">课时:{{videoInfo[radomIndex].courseTime}}</text>
+          <text class="learnPersonNum">{{videoInfo[radomIndex].learnPersonNum}}人已学习</text>
+        </view>
+      </view>
+      <view class="right">
+        <button bindtap="openConfirm">关注</button>
+      </view>
+    </view>
+  </view>
+  <!-- tab栏切换 -->
+  <view class="pages">
+    <view class="page__bd">
+      <view class="weui-tab">
+        <view class="weui-navbar">
+          <block wx:for="{{tabs}}" wx:key="*this">
+            <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+              <view class="weui-navbar__title">{{item}}</view>
+            </view>
+          </block>
+          <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+        </view>
+        <view class="weui-tab__panel">
+          <view class="weui-tab__content listInfo" hidden="{{activeIndex != 0}}">
+            <!-- 目录tab栏内容 -->
+            <block wx:for="{{listInfo}}">
+              <view class="{{item.url == videoInfo[radomIndex].url?'heightLight':''}} item" data-url='{{item.url}}' data-index="{{index}}" bind:tap="changeUrl">
+                <view class="left">{{index
+                  <=9? '0': ''}}{{index+1+ '.'}}{{item.info}}</view>
+                    <view class="right">{{item.time}}</view>
+                </view>
+            </block>
+            </view>
+            <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+              <!-- 详情tab栏的内容 -->
+              <text></text>
+            </view>
+            <view class="weui-tab__content" hidden="{{activeIndex != 2}}">
+              <!-- 评价tab栏的内容 -->
+              <view class="weui-panel__bd" wx:for="{{commentInfo}}">
+                <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                  <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                    <image class="weui-media-box__thumb" src=" {{item.headPic}}" />
+                  </view>
+                  <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                    <view class="weui-media-box__title">{{item.author}}</view>
+                    <view class="weui-media-box__desc">{{item.content}}</view>
+                  </view>
+                </navigator>
+                <view class="line"></view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>

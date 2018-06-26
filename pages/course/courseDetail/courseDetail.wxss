@@ -1,0 +1,158 @@
+/* 课程详情页面样式 */
+
+page {
+    background-color: #F5F7FB;
+}
+
+.video-container {}
+
+.video-container video {
+    width: 100%;
+    height: 422rpx;
+    padding: 0;
+    margin: 0;
+    /* 去除默认底部有3像素 */
+    display: block;
+    vertical-align: middle;
+}
+
+.video-container .video-info {
+    background-color: #fff;
+    width: 100%;
+    height: 194rpx;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.weui-navbar {
+    border-bottom: 1rpx solid #F6F6F6;
+    background-color: #fff;
+}
+
+.video-info {
+    display: flex;
+    align-items: center;
+    padding: 0 63rpx 0 45rpx;
+    box-sizing: border-box;
+}
+
+.video-info .left {
+    display: flex;
+    flex-direction: column;
+}
+
+.video-info .left .title {
+    font-size: 32rpx;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 26rpx;
+}
+
+.someInfo {
+    display: flex;
+    font-size: 20rpx;
+    color: #A2A2A2;
+    width: 412rpx;
+    height: 20rpx;
+    justify-content: space-between;
+}
+
+.video-info .left .teacher {}
+
+.video-info .left .teacher::after {}
+
+.video-info .left .courseTime {}
+
+.video-info .left .learnPersonNum {}
+
+.video-info .right {}
+
+.video-info .right button {
+    background-color: #FF8F3D;
+    width: 120rpx;
+    height: 50rpx;
+    border-radius: 10rpx;
+    font-size: 23rpx;
+    color: white;
+}
+
+page,
+.page,
+.page__bd {
+    height: 100%;
+}
+
+.page__bd {
+    padding-bottom: 0;
+}
+
+.pages {
+    color: #333333;
+    background-color: #fff;
+    margin-top: 16rpx;
+    height: 573rpx;
+}
+
+.weui-navbar__title {}
+
+.weui-navbar__item.weui-bar__item_on {
+    color: #FF547C;
+}
+
+.weui-navbar__slider {
+    background-color: #FF547C;
+    width: 122rpx;
+    height: 4rpx;
+    position: absolute;
+}
+
+.listInfo {
+    font-size: 22rpx;
+    color: #A9A9A9;
+    line-height: 62rpx;
+    padding: 48rpx 46rpx 0;
+    box-sizing: border-box;
+}
+
+.listInfo .item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.weui-panel__bd {
+    text-align: left;
+}
+
+.weui-media-box {
+    padding: 41rpx 0 33rpx 41rpx;
+    line-height: 42rpx;
+    height: 174rpx;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.heightLight {
+    color: #FF547C;
+    
+}
+
+.weui-media-box__hd_in-appmsg {
+    margin-right: 32rpx;
+}
+
+.weui-media-box__title {
+    margin-bottom: 22rpx;
+}
+
+navigator.weui-media-box::after {
+    content: "";
+    height: 2rpx;
+    width: 640rpx;
+    background-color: #EFEFEF;
+    position: absolute;
+    bottom: 0;
+    left: 55rpx;
+}
+
+.line {}

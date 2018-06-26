@@ -1,0 +1,19 @@
+<!-- 会员购买页面结构 -->
+<view class="top-bar">
+    <scroll-view class="vip-card" scroll-x style="width: 100%" scroll-with-animation>
+        <block wx:for="{{vipCardInfo}}">
+            <view class="item">
+                <image src="{{item.url}}"></image>
+            </view>
+        </block>
+    </scroll-view>
+</view>
+<view class="vipInfo">
+    <view class="title">会员福利</view >
+    <view class="content">
+        <block wx:for="{{vipInfo}}">
+          <view class="item">{{index+1}}.{{item.content}}</view>
+       </block>
+    </view>
+    <button class="buy">确定选购</button>
+</view>

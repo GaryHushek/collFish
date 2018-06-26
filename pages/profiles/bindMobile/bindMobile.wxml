@@ -1,0 +1,15 @@
+<!-- 绑定手机页面结构 -->
+<form class="input" bind:submit="sendVerify">
+    <view>
+        <input type="text" name="phoneNum" bind:blur="phoneNumVerify" class="phone" placeholder="请输入手机号" />
+    </view>
+    <view class="vCode">
+        <input type="text" name="vCode" placeholder="请输入验证码" />
+        <button wx:if="{{!sendVCodeFlag}}" class="sendVCode" bind:tap="senVCode">发送验证码</button>
+         <text wx:else class="sendVCode">{{!sendVCodeFlag?'':'重新发送('+sendSecond+')S'}}</text>
+    </view>
+    <view class="info">{{info}}</view>
+    <button  form-type="submit" class="bind" style="background:{{sendFlage?sendFlagTrueColor:sendFlagFalseColor}}">
+        验证绑定
+    </button>
+</form>

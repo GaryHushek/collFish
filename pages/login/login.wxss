@@ -1,0 +1,77 @@
+/* 登录页样式 */
+
+page {
+    background-color: #F5F7FB;
+}
+
+.top {
+    height: 299rpx;
+    text-align: center;
+    overflow: hidden;
+}
+
+.top .title {
+    margin-top: 103rpx;
+    font-size: 34rpx;
+    color: #333;
+}
+
+.top .sub-title {
+    font-size: 26rpx;
+    color: #959595;
+    margin-top: 23rpx;
+}
+
+.input {
+    height: 478rpx;
+    background-color: #fff;
+    padding: 71rpx 71rpx 69rpx 73rpx;
+    font-size: 28rpx;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.input .cell>label {
+    width: 96rpx;
+    text-align: right;
+}
+.input .cell {
+    display: flex;
+    align-items: center;
+}
+
+.input .cell>label {
+    margin-right: 46rpx;
+}
+
+.input .cell>input {
+    border-bottom: 2rpx solid #eee;
+    font-size: 28rpx;
+    color: #333;
+    flex: 1;
+}
+radio  {
+    transform: scale(.7);
+}
+.input .cell:last-child {
+    display: flex;
+}
+
+.input .cell:last-child picker {
+    border-bottom: 2rpx solid #eee;
+    flex: 1;
+}
+
+button.submit {
+    height: 96rpx;
+    width: 510rpx;
+    border-radius: 48rpx;
+    margin: 0 auto;
+    margin-top: 168rpx;
+    color: white;
+    font-size: 34rpx;
+    line-height: 96rpx;
+    background: rgba(255, 84, 124, 1);
+    box-shadow: 0rpx 42rpx 92rpx rgba(255, 84, 124, 0.47);
+}

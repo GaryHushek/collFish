@@ -1,0 +1,60 @@
+/*  课程页面样式 */
+
+page {
+    background-color: #F5F7FB;
+}
+
+.course-container {
+    padding-top: 24rpx;
+}
+
+.course-container .item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #fff;
+    width: 702rpx;
+    height: 213rpx;
+    border-radius: 10rpx;
+    margin: 0 auto 30rpx;
+    padding: 0 39rpx 0 34rpx;
+    box-sizing: border-box;
+}
+
+.course-container .item .img {}
+
+.course-container .item .img image {
+    display: block;
+    width: 151rpx;
+    height: 151rpx;
+}
+
+.course-container .item .courseInfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 45rpx;
+}
+
+.course-container .item .courseInfo .title {
+    color: #333;
+    font-size: 32rpx;
+}
+
+.course-container .item .courseInfo .subTitle {
+    color: #A2A2A2;
+    font-size: 22rpx;
+    margin-top: 10rpx;
+}
+
+.course-container .item .getCourseDetail {
+    width: 154rpx;
+    height: 50rpx;
+    border-radius: 6rpx;
+    font-size: 21rpx;
+    color: white;
+    margin: 0;
+    position: absolute;
+    right: 39rpx;
+    top: 50%;
+    transform: translateY(-50%);
+}

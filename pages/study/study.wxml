@@ -1,0 +1,14 @@
+<!-- 课程页结构 -->
+<view class="course-container">
+    <block wx:for="{{courseInfo}}">
+        <view class="item">
+            <view class="img">
+                <image src="{{item.url}}"></image>
+            </view>
+            <view class="courseInfo">
+                <view class="title">{{item.title}}</view>
+                <view class="subTitle">已学{{item.progress}}</view>
+            </view>        
+        </view>
+    </block>
+</view>

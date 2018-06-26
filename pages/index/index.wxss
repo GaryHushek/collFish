@@ -1,0 +1,131 @@
+/*  主页的样式 */
+
+.banner {
+}
+
+.banner swiper swiper-item image {
+  display: block;
+  width: 672rpx;
+  height: 266rpx;
+  border-radius: 10rpx;
+  margin: 26rpx auto;
+}
+
+.mian {
+  padding: 0 24rpx;
+}
+
+.hot-lesson {
+  margin-bottom: 42rpx;
+}
+
+.hot-lesson .top-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 52rpx 25rpx 34rpx 0;
+}
+
+.hot-lesson .top-title .left {
+  color: #333;
+  font-size: 26rpx;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+
+.hot-lesson .top-title .left image {
+  width: 25rpx;
+  height: 26rpx;
+  margin-right: 15rpx;
+}
+
+.hot-lesson .top-title .right {
+  color: #aaacb1;
+  font-size: 22rpx;
+  display: flex;
+  align-items: center;
+}
+
+.hot-lesson .top-title .right image {
+  width: 26rpx;
+  height: 26rpx;
+}
+
+.bottom-container {
+}
+
+.bottom-container scroll-view {
+  /* display:flex  没有用*/
+  height: 160rpx;
+  /* 不换行 */
+  white-space: nowrap;
+}
+
+.bottom-container scroll-view .item {
+  display: inline-block;
+  width: 300rpx;
+  height: 160rpx;
+  border-radius: 20rpx;
+  margin-right: 18rpx;
+  color: white;
+  padding-top: 29rpx;
+  padding-left: 26rpx;
+  box-sizing: border-box;
+}
+
+scroll-view .item .title {
+  font-size: 30rpx;
+}
+
+scroll-view .item .subTitle {
+  font-size: 20rpx;
+}
+
+.recommendVideo {
+}
+
+.recommendVideo .top-title {
+    display: flex;
+    align-items: center;
+}
+
+.recommendVideo .top-title image {
+  width: 28rpx;
+  height: 27rpx;
+  margin-right: 15rpx;
+}
+
+.recommendVideo .top-title .title {
+    font-size: 26rpx;
+    color: #333333;
+    font-weight: 700;
+}
+
+.recommendVideo .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 28rpx;
+}
+
+.recommendVideo .content .item {
+  width: 342rpx;
+  margin-bottom: 30rpx;
+}
+
+.recommendVideo .content .item image {
+  width: 342rpx;
+  height: 222rpx;
+  border-radius: 10rpx;
+}
+.recommendVideo .content .item .title  {
+    color: #666666;
+    font-size: 20rpx;
+    font-weight: 500;
+}
+.recommendVideo .content .item .seeCount {
+    color: #999999;
+    font-size: 16rpx;
+}
+

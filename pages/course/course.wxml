@@ -1,0 +1,17 @@
+<!-- 课程页结构 -->
+<view class="course-container">
+    <block wx:for="{{courseInfo}}">
+        <view class="item">
+            <view class="img">
+                <image src="{{item.url}}"></image>
+            </view>
+            <view class="courseInfo">
+                <view class="title">{{item.title}}</view>
+                <view class="subTitle">{{item.subTitle}}</view>
+            </view>
+            <button class="getCourseDetail" data-course-name="{{item.title}}" bindtap="{{item.courseStatus?'getCourseDetail':'courseFull'}}" style="background-color:{{item.courseStatus?mainColor:pullColor}}" bindTap="">
+                {{item.courseStatus?'了解课程':'人数满额'}}
+            </button>
+        </view>
+    </block>
+</view>

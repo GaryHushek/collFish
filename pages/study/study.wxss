@@ -1,0 +1,48 @@
+/*  学习页面样式 */
+
+page {
+    background-color: #F5F7FB;
+}
+
+.course-container {
+    padding: 0 24rpx;
+    background-color: #fff;
+}
+
+.course-container .item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 226rpx;
+    box-sizing: border-box;
+    border-bottom: 2rpx solid #F2F2F2;
+}
+
+.course-container .item .img {}
+
+.course-container .item .img image {
+    display: block;
+    width: 218rpx;
+    height: 145rpx;
+}
+
+.course-container .item .courseInfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 45rpx;
+    height: 145rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.course-container .item .courseInfo .title {
+    color: #333;
+    font-size: 28rpx;
+}
+
+.course-container .item .courseInfo .subTitle {
+    color: #78CC00;
+    font-size: 20rpx;
+}
